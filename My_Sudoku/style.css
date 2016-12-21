@@ -1,0 +1,36 @@
+body {
+	background-color: #C8CDD2;
+	background: url("wp.jpg");
+	background-size: cover;
+}
+
+nav {
+	background-color: #B3AFAB!important;
+	border: 0px!important;
+	border-bottom: 3px solid transparent!important;
+	border-radius: 0px!important;
+}
+
+.navbar-brand {
+	font-size: 1.8em;
+	color: #676562!important;
+}
+
+tr {
+	background-color: #F0F0F0;
+}
+
+table {
+	margin-top: 20px;
+}
+
+h3 {
+	text-align: left;
+	margin-top: 50px;
+	color: #B3AFAB;
+}
+
+.table>tbody>tr>td {
+	border-color: #B3AFAB;
+	color: #B39175;
+}

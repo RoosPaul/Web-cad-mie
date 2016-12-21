@@ -1,0 +1,54 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>Calcul d'itinéraire Google Map Api v3</title>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link rel="stylesheet" href="jquery-ui-1.8.12.custom.css" type="text/css" /> 
+	<link rel="stylesheet" href="style.css" type="text/css" /> 
+</head>
+<body>
+	<div id="destinationForm">
+		<div class="navbar-header">
+			<span class="navbar-brand">
+				My Maps
+				<span class="glyphicon glyphicon-send" aria-hidden="true"></span>
+			</span>
+		</div>
+		<form method="get" name="direction" id="direction" class="navbar-form ">
+			<div class="input-group ">				
+				<span class="input-group-addon" id="basic-addon1">
+					<span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+				</span>
+				<input type="text" class="form-control" aria-describedby="basic-addon1" name="origin" id="origin">
+			</div>
+			<div class="input-group">
+				<span class="input-group-addon" id="basic-addon2">
+					<span class="glyphicon glyphicon-flag" aria-hidden="true"></span>
+				</span>
+				<input type="text" class="form-control" aria-describedby="basic-addon2" name="destination" id="destination">
+			</div>
+			<input type="button" value="Calculer l'itinéraire" onclick="javascript:calculate()" class="btn btn-success">
+			<span onclick="history()" class="btn btn-default">dernier trajet</span>
+			<span id="button" onclick="resizeMap()" class="btn btn-default">Full Screen</span>
+		</form>
+		
+	</div>
+	<div id="container">
+
+		<div id="map">
+			<p>Veuillez patienter pendant le chargement de la carte...</p>
+		</div>
+	</div>
+
+	<!-- Include Javascript -->
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="jquery-ui-1.8.12.custom.min.js"></script> -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBzatuzZubo8JY0NOrHpgDeZQaUU4X4mb4&libraries=geometry,places"></script>
+	<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
